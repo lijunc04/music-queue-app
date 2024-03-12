@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View } from "react-native";
 
 import globalStyles from "../../styles/globalStyles";
-import QRCamera from "../../components/qrScanner";
+import QRCamera from "./components/qrScanner";
 
 export default function ScanCodePage(props){
     return (

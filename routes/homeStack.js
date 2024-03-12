@@ -3,7 +3,8 @@ import { createStackNavigator } from '@react-navigation/stack';
 import Home from '../pages/homepage/home';
 import ScanCodePage from '../pages/join-pages/scanCodePage';
 import JoinCodePage from '../pages/join-pages/joinCodePage';
-import AddQueueMain from '../pages/add-queue/addQueueMain';
+import AddQueueMain from '../pages/lobby-user/add-queue/addQueueMain';
+import LobbyPageUserView from '../pages/lobby-user/lobby';
 
 const Stack = createStackNavigator();
 
@@ -27,6 +28,10 @@ export default function HomeStack() {
         <Stack.Screen
           name="AddQueueMain"
           component={AddQueueMain}
+        />
+        <Stack.Screen
+          name="LobbyUser"
+          component={LobbyPageUserView}
         />
       </Stack.Navigator>
     );

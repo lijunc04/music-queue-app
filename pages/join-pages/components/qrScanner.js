@@ -1,7 +1,7 @@
 import { CameraView, useCameraPermissions, Camera} from 'expo-camera/next';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { useState, useEffect } from 'react/cjs/react.development';
-import globalStyles from '../styles/globalStyles';
+import globalStyles from '../../../styles/globalStyles';
 
 
 export default function QRCamera(props){
@@ -19,7 +19,7 @@ export default function QRCamera(props){
 
     const scannedHandler = ({type, data}) =>{
         setScanned(true);
-        props.navigation.replace(navDestination, data);
+        props.navigation.replace(navDestination, [data, 'qr']);
     }
 
     const flipBtnHandler = () =>{

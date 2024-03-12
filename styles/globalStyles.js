@@ -28,8 +28,6 @@ const globalStyles = StyleSheet.create({
             backgroundColor: '#a7cbf2',
             borderRadius: 5,
             borderColor: '#ffffff',
-            width:'40%',
-            height:'5%',
             alignItems: 'center',
         },
 
@@ -37,11 +35,18 @@ const globalStyles = StyleSheet.create({
             borderWidth: 1,
             margin: 10,
             padding: 10,
-            height:'5%',
+            minWidth:'70%',
             width:'70%',
             borderRadius:5,
             textAlign:'center',
         },
+        flatList: {
+            width: '100%',
+            padding: 5,
+            flexGrow: 0,
+            flexDirection:'column',
+        }
+
         });
 
 export default globalStyles;
