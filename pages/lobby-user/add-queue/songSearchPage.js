@@ -12,7 +12,7 @@ export default function SongSearchView(props){
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': '5fa4013563msha4fb33a1037d77ap19524djsn22c97b977662',
+            'X-RapidAPI-Key': process.env.DEEZER_API_KEY,
             'X-RapidAPI-Host': 'deezerdevs-deezer.p.rapidapi.com'
         }
     };
