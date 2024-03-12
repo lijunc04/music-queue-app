@@ -18,3 +18,5 @@ Testing the app with one of the dining halls at my university. It would be a gre
 **Feb 26, 2024**
 Created Expo app, set up basic navigation framework, created basic home screen, set up QR code scanner.
 
+**Mar 11, 2024**
+Edited navigation, built lobby screen, connected Deezer api for song searching, built basic song search screen
